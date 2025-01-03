@@ -1,7 +1,7 @@
 import React from 'react';
 import TaskItem from '../TaskItem/TaskItem';
 
-function TaskList({ tasks, deleteTask, toggleTaskDone }) {
+function TaskList({ tasks, deleteTask, TaskDone }) {
   return (
     <ul className="list-group">
       {tasks.map((task) => (
@@ -9,7 +9,7 @@ function TaskList({ tasks, deleteTask, toggleTaskDone }) {
           key={task.id}
           task={task}
           deleteTask={deleteTask}
-          toggleTaskDone={toggleTaskDone}
+          TaskDone={TaskDone}
         />
       ))}
     </ul>

@@ -14,7 +14,7 @@ function App() {
     setTasks(tasks.filter((task) => task.id !== id));
   };
 
-  const toggleTaskDone = (id) => {
+  const TaskDone = (id) => {
     setTasks(
       tasks.map((task) =>
         task.id === id ? { ...task, isDone: !task.isDone } : task
@@ -29,7 +29,7 @@ function App() {
       <TaskList
         tasks={tasks}
         deleteTask={deleteTask}
-        toggleTaskDone={toggleTaskDone}
+        TaskDone={TaskDone}
       />
     </div>
   );

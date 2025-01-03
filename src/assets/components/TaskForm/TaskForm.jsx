@@ -9,7 +9,7 @@ function TaskForm({ addTask }) {
       addTask(task);
       setTask('');
     }
-  };
+  };  
 
   return (
     <form className="mb-4" onSubmit={handleSubmit}>
